@@ -17,5 +17,5 @@
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 git clone https://github.com/jerrykuku/lua-maxminddb package/lean/ua-maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr package/lean/luci-app-vssr
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon LUCI->Theme->Luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon LUCI/Theme/Luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/lean/luci-app-jd-dailybonus
