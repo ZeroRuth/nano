@@ -15,3 +15,22 @@
 # 清除默认主题
 sed -i '/set luci.main.mediaurlbase=\/luci-static\/bootstrap/d' feeds/luci/themes/luci-theme-bootstrap/root/etc/uci-defaults/30_luci-theme-bootstrap
 #=================================================
+# 清除旧版argon主题并拉取最新版
+
+pushd package/lean
+
+rm -rf luci-theme-argon# luci-theme-argon for 18.06 by jerrykuku
+
+rm -rf package/lean/luci-theme-argon
+
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/mine/luci-theme-argon
+
+# luci-app-vssr
+
+git clone htpHtps://github.com/jerrykuku/lua-maxminddb package/mine/lua-maxminddb
+
+git clone https://github.com/jerrykuku/luci-app-vssr package/mine/luci-app-vssr
+
+# Luci for JD dailybonus Script for Openwrt
+
+git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/mine/luci-app-jd-dailybonus
