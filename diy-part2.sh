@@ -13,12 +13,5 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 
-# luci-app-vssr
-
-git clone htpHtps://github.com/jerrykuku/lua-maxminddb package/mine/lua-maxminddb
-
-git clone https://github.com/jerrykuku/luci-app-vssr package/mine/luci-app-vssr
-
-# Luci for JD dailybonus Script for Openwrt
-
-git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/mine/luci-app-jd-dailybonus
+# 更改默认主题
+#sed -i 's/config internal themes/config internal themes\n    option Argon  \"\/luci-static\/argon\"/g' feeds/luci/modules/luci-base/root/etc/config/luci
